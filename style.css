@@ -1,0 +1,130 @@
+@charset "UTF8";
+@font-face {
+        font-family:'idroid' ;
+        src: url('/fontes/idroid.otf') format('opentype');
+    }
+
+:root{
+    --c1: #b1ecb9;
+    --c2: #4f926c;
+
+    --fonte-padrao: Arial, Verdana, sans-serif;
+    --fonte-destaque: 'idroid', arial, sans-serif;
+}
+*{
+    font-family: var(--fonte-padrao);
+
+}
+body{background-color:var(--c1);
+font-family: var(--fonte-padrao);
+margin: 0px;
+padding: 0px;
+}
+
+header{
+color: white;
+
+
+background-image: linear-gradient(to bottom, var(--c2),rgb(44, 73, 35));
+
+text-align: center;
+margin: 0px;
+padding: 22px;
+font-size: 1.6em;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.54);
+
+}
+body a{
+    color: rgb(10, 68, 10);
+    background-color: var(--c2);
+    border-radius: 3px;
+}
+body a:hover{
+    background-color: coral;
+}
+nav{
+    padding: 10px;
+    background-color: darkslategray;
+    
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+nav > a:hover{
+    background-color: coral;
+    border-radius: 10px;
+}
+main p{
+    text-align: justify;
+}
+main{
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.56);
+
+} 
+img{
+        width: 100%;
+    }
+h2{
+    font-family: var(--fonte-destaque);
+}
+h3{
+    background-color: var(--c1);
+    margin: 20px 10px;
+    text-align: center;
+}
+div.video{
+    margin-bottom: 30px ;
+    padding: 20px;
+    padding-bottom: 54%;
+    background-color: var(--c2);
+    border-radius: 30px;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--c2);
+    margin: auto;
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.54);
+    border-radius: 20px;
+    color:white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.54);
+}
+aside ul{
+    columns: 2;
+    background-color: var(--c1);
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.54);
+    border-radius: 20px;
+    list-style: inside;
+    color: black;
+}
+div{
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
